@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
-import AppContext from '../Context/AppContext'
-
 let context = '';
 const GlobalContext = (contextInstance)=>{
-    if(!context)
+    if(!context){
         context = contextInstance;
+        console.log("setting global context");
+    }
+    console.log("returning global context");
     return context;
 }
 export default GlobalContext;

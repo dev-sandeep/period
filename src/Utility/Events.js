@@ -1,14 +1,15 @@
 
 import React, {useContext} from 'react'
-import AppContext from './../Context/AppContext'
-import GlobalContext from './GlobalContext';
-// import getContext from '../Utility/ReactFn'
+// import AppContext from './../Context/AppContext'
+// import GlobalContext from './GlobalContext';
 
 export const onSelectEvent = (event) => {
-    console.log(event);
+    
 }
 
 export const onSelectDate = (event, context) => {
     console.log(event);
-    GlobalContext().dayModalVisibility(true);
+    // const { changeSelectDateVisibility } = UseCycle();
+    // changeSelectDateVisibility(true);
+    // GlobalContext().dayModalVisibility(true);
 }
